@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  width: 50%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+li {
+  height: 100px;
+  background: cyan;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+}
