@@ -13,6 +13,7 @@ class Grid extends Component {
               position={index}
               key={index}
               guess={this.props.guess}
+              win={this.props.win}
             />
           ))}
         </ul>

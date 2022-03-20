@@ -7,7 +7,9 @@ class Item extends Component {
       <>
         <li
           onClick={
-            this.props.value === 0
+            this.props.win === true
+              ? () => console.log("invalid click")
+              : this.props.value === 0
               ? () => this.props.guess(this.props.position)
               : () => console.log("invalid click")
           }

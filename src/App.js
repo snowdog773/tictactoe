@@ -35,7 +35,11 @@ class App extends Component {
             <h2> Player {this.state.turn}'s Turn</h2>
           )}
         </>
-        <Grid board={this.state.board} guess={this.guess} />
+        <Grid
+          board={this.state.board}
+          guess={this.guess}
+          win={this.state.win}
+        />
       </>
     );
   }
