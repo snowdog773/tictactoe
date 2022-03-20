@@ -1,20 +1,30 @@
-h1 {
+h1,
+h2 {
   text-align: center;
 }
 
 ul {
   list-style: none;
   display: grid;
-  width: 50%;
+
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  width: 300px;
+  border: none;
+  padding: 0;
 }
 
 li {
+  background: #ddd;
+  width: 100px;
   height: 100px;
-  background: cyan;
   border-color: #000;
   border-style: solid;
   border-width: 2px;
   text-align: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 65px;
 }
