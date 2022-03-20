@@ -6,6 +6,7 @@ ul {
   list-style: none;
   display: grid;
   width: 50%;
+  margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
