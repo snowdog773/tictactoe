@@ -3,7 +3,7 @@ import Grid from "./Grid";
 import "./App.css";
 
 class App extends Component {
-  state = { board: [0, 0, 0, 0, 0, 0, 0, 0, 0], turn: 1, win: false };
+  state = { board: new Array(9).fill(0), turn: 1, win: false };
 
   guess = (position) => {
     const newBoard = [...this.state.board];
@@ -11,6 +11,17 @@ class App extends Component {
     // check for a win
     const [a, b, c, d, e, f, g, h, i] = newBoard;
     const token = [this.state.turn, this.state.turn, this.state.turn];
+    // const bigArray = [
+    //   [a, b, c],
+    //   [d, e, f],
+    //   [g, h, i],
+    //   [a, d, g],
+    //   [b, e, h],
+    //   [c, f, i],
+    //   [a, e, i],
+    //   [c, e, g],
+    // ];
+    // bigArray.map((e) => JSON.stringify(e) === JSON.stringify);
     JSON.stringify([a, b, c]) === JSON.stringify(token) ||
     JSON.stringify([d, e, f]) === JSON.stringify(token) ||
     JSON.stringify([g, h, i]) === JSON.stringify(token) ||
